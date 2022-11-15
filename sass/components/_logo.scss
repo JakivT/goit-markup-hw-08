@@ -44,9 +44,4 @@
     color: var(--primary-text-light-color);
     margin-bottom: 20px;
     transition: color var(--transition-dur-fun);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
 }

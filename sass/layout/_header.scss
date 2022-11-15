@@ -1,5 +1,5 @@
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   padding-top: 10px;
   padding-bottom: 16px;
   @include tablet {
@@ -32,24 +32,25 @@
   }
 }
 
-@include tablet {
-  .nav__link {
-    display: inline-block;
-    color: var(--primary-text-dark-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color var(--transition-dur-and-func);
-    position: relative;
-  }
-    & :hover,
-    & :focus {
+
+.nav__link {
+display: inline-block;
+color: var(--primary-text-dark-color);
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+padding-top: 32px;
+padding-bottom: 32px;
+transition: color var(--transition-dur-and-func);
+position: relative;
+
+    &:hover,
+    &:focus {
       color: var(--accent-color);
     }
-  }
 }
+}
+
 
 @include desktop {
   .nav__link {
@@ -92,6 +93,12 @@
   font-weight: 500;
   line-height: 1.14px;
   letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
 
   @include tablet {
     font-size: 12px;

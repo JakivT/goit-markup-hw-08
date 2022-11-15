@@ -31,9 +31,6 @@
 }
 
 .project-list__item {
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  border-left: 1px solid #eee;
   box-sizing: border-box;
   @include tablet {
     width: calc((100% - 30px) / 2);
@@ -67,6 +64,9 @@
 }
 
 .project-list__position {
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
   position: relative;
   overflow: hidden;
 }

@@ -32,9 +32,15 @@
 
 .advantages__item {
   width: 100%;
+  margin-bottom: 30px;
 
-  @include tablet {
-    width: 354px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -49,4 +55,8 @@
 .advantages__text {
   line-height: 1.71;
   color: var(--secondary-text-dark-color);
+
+  @media screen and (max-width: 768px){
+    text-align: left;
+  }
 }
